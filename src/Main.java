@@ -58,20 +58,44 @@ public class Main {
 
 
         //exemple clasa sportiv-Inotator
-        Inotator inotator1 = new Inotator();
-        Maratonist maratonist1 = new Maratonist();
+        Inotator inotator1 = new Inotator("Popescu","Ro");
+        Maratonist maratonist1 = new Maratonist("Ion","It");
         inotator1.seAntreneaza();
         inotator1.seOdihneste();
         maratonist1.seOdihneste();
 
         System.out.println("--------");
-
-        Animal catel = new Animal("Azorel");
+         // Ex1 pct 7
+        Animal catel = new Animal("Dog");
         Animal pisica = new Animal("Cat","alba",false);
-
+         //Ex 1 pct 8
         catel.mananca();
         pisica.doarme();
         System.out.println(pisica.afiseaza());
+
+
+         Fotbalist fotbalist1 = new Fotbalist("Mbappe","Fr");
+         fotbalist1.seOdihneste();
+
+         Masina masina1 = new Masina();
+         Masina masina2 = new Masina();
+         masina2.marca = "Mercedes";
+        System.out.println(masina1.marca);
+        System.out.println(masina2.marca);
+        masina2.anFabricatie = 2023;
+        System.out.println(masina1.anFabricatie);
+        System.out.println(masina2.anFabricatie);
+
+        Person diana = new Person(2,"FM","Obancea","Maria");
+        diana.caracteristici();
+        Person A = new Person(20,"Adi");
+        System.out.println(A);
+
+        //ex 2 pct 3
+        Patruped Azorel = new Patruped();
+        System.out.println(Azorel.culoare);
+
+
 
 
 
